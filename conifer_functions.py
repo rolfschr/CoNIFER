@@ -44,6 +44,8 @@ def chrInt2Str(chromosome_int):
 		return 'chrX'
 	elif int(chromosome_int) == 24:
 		return 'chrY'
+	elif int(chromosome_int) == 25:
+		return 'chrM'
 	else:
 		return 'chr' + str(chromosome_int)
 
@@ -54,6 +56,8 @@ def chrStr2Int(chromosome_str):
 		return 23
 	elif chr == 'Y':
 		return 24
+	elif chr == 'M':
+		return 25
 	else:
 		return int(chr)
 
